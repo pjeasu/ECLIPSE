@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+
+		 <script type = "text/javascript">
+		 
+		 	//텍스트 노드 이용하기
+		 	window.onload = function(){
+		 		
+		 		//<p> 태그 객체 생성	
+		 		var elementNode = document.createElement("p"); 
+		 		//텍스트 객체 생성
+		 		var textNode = document.createTextNode("javascript & node.js");
+		 		
+		 		// <p> 태그에 텍스트를 담음 : <p>javascript & node.js</p>
+		 		elementNode.appendChild(textNode);
+		 		// 위 태그를 body에 넣음 
+		 		document.body.appendChild(elementNode);
+		 	};
+		 	
+		</script> 
+	</head>
+	<body>
+		
+	</body>
+	
+</html>

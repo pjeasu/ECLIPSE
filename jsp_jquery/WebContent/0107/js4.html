@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>javascript</title>
+		
+		<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script>
+			//양식 (폼) 이벤트 -1
+			//$(document).ready(function(){
+				
+				$("#sbmBtn").click(function() {
+					if($("#uId").val() == "") {
+						alert("user id blank!!");
+					} else if($("#uPw").val() == "") {
+						alert("user pw blank!!");
+					} else {
+						alert("login ok!!");
+						$("#loginForm").submit();
+					}
+				});
+				
+				$("#resBtn").click(function(){
+					alert("reset ok!!");
+					$("#loginForm")[0].reset();
+					//자바스크립트에서 모든 객체는 배열로 이루어져있으므로!
+					//[0]를 빼도됨
+				});
+				
+			//});
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<form id = "loginForm" action="http://www.google.com">
+			USER ID : <input id = "uId" type = "text" name = "uId"><br>
+			USER PW : <input id = "uPw" type = "password" name = "upw"><br>
+			<input id = "sbmBtn" type = "button" value = "SUBMIT">
+			<input id = "resBtn" type = "button" value = "RESET">
+		</form>
+		
+		
+	</body>
+</html>
+

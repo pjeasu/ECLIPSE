@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+					
+			//생성자를 이용한 객체 생성
+	 		function Airplane (name, color, speed){
+	 			this.name = name;
+	 			this.color = color;
+	 			this.speed = speed;
+	 			this.fly = function(){
+	 				return this.speed + " fly!"
+	 			};
+	 		};
+	 		
+	 		var boeing747 = new Airplane("boeing747", "white/blue", "600km/h");
+	 		console.log("boeing747.name : " + boeing747.name);
+	 		console.log("boeing747.color : " + boeing747.color);
+	 		console.log("boeing747.fly : " + boeing747.fly());
+		 	
+	 		
+	 		
+	 		
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

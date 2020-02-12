@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+
+		 <script type = "text/javascript">
+		 
+		 //style속성을 이용한 CSS적용
+		 window.onload = function() {
+			var str = "";
+			str += "<p id='jsTitle'> javascript & node.js </p>";
+			str += "<img id='logoImg', src='./image.jpg'>";
+			
+			document.body.innerHTML = str;
+			
+			var titleNode = document.getElementById("jsTitle");
+			titleNode.style.fontSize = "1.2em";
+			titleNode.style.border = "1px solid #ff0000";
+			
+			var logoNode = document.getElementById("logoImg");
+			logoNode.style.width = "170px";
+			logoNode.style.height = "67px";
+		 };
+		 	
+		</script> 
+	</head>
+	<body>
+		
+	</body>
+</html>

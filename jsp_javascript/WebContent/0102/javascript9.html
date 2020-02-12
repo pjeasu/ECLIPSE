@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+					
+		 	//getter, setter
+		 	function BMICalculator(){
+		 		var height = 0;
+		 		var weight = 0;
+		 		
+		 		this.bmi = function(){
+		 			return(this.weight /(this.height)).toFixed(2);
+		 			//Number.prototype.toFixed();
+		 		};
+		 		
+		 		this.getHeight = function(){
+		 			return this.height;
+		 		};
+		 		
+		 		
+		 		this.setHeight = function(height){
+		 			if(!isNaN(height)){
+		 				this.height = height;
+		 			}else{
+		 				console.log("height is NaN(Not a Number)!");
+		 				//Not-A-Number(숫자가 아님)
+		 			};
+		 		};	 	
+		 		
+		 		this.getWeight = function(){
+		 			return this.weight;
+		 		};
+		 	
+		 		this.setWeight = function(weight){
+		 			if(!isNaN(weight)){
+		 				this.weight = weight;
+		 			}else{
+		 				console.log("weight is NaN(Not a Number)!");
+		 			};
+		 		};	 		
+		 	}
+		 	
+		 	var myBMI = new BMICalculator();
+		 	myBMI.setHeight(1.9);
+		 	myBMI.setWeight(90);
+		 	console.log("myBMI.bmi : " + myBMI.bmi());
+		 	
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

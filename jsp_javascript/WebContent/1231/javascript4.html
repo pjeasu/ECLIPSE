@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+							
+				//내부함수
+				
+				function outFun(width, height){
+					console.log("triangle : " + triangle());
+					console.log("quadrangle : " + quadrangle());
+					
+					//삼각형 면적계산
+					function triangle(){
+						return (width * height) / 2;
+					}
+					
+					//사각형 면적계산
+					function quadrangle(){
+						return width * height;
+					}
+				}
+				
+				outFun(3, 5);
+					
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+
+		 <script type = "text/javascript">
+		 
+		 //부모객체를 찾은 다음 부모객체에서 자식객체를 삭제
+		 window.onload = function() {
+				var str = "";
+				str += "<p id='jsTitle'> javascript & node.js </p>";
+				str += "<img id='logoImg', src='./image.jpg',";
+				str += "width='170', height='67', tempData='logoImg'>";
+				
+				document.body.innerHTML = str;
+				
+				var titleNode = document.getElementById("jsTitle");
+				titleNode.parentNode.removeChild(titleNode);
+				
+				var logoNode = document.getElementById("logoImg");
+				logoNode.parentNode.removeChild(logoNode);
+				
+		 };
+		 	
+		</script> 
+	</head>
+	<body>
+		
+	</body>
+	
+</html>

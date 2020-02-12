@@ -1,0 +1,9 @@
+{
+	"DEPT" : {
+		"NEWYORK":"ACCOUNTING",
+		"DALLAS":"RESEARCH",
+		"CHICAGO":"SALES",
+		"BOSTON":"OPERATIONS"
+	
+	}
+}

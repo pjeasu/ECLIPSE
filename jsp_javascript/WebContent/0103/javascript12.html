@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+
+		 <script type = "text/javascript">
+		 
+		 //기본 모델
+		 window.onload = function(){
+			 var ce = document.getElementById("cEvent");		 
+		
+			 //방법 1
+			 ce.onclick = function(){
+				console.log("click");
+			 	//이벤트 제거
+			 	//ce.onclick = null;
+			 }
+			 
+			 //방법 2
+			 /* ce.onclick = clickEventHandler;
+			 function clickEventHandler(){
+				 console.log("clickEventHandler!");
+				//이벤트 제거
+				//ce.onclick = null;
+			 } */
+			 
+		 };
+		 
+		</script> 
+		<style>
+			#cEvent {
+				width: 200px; height: 100px;
+				line-height: 100px;
+				text-align: center;
+				font-size: 1.2em;
+				background-color: #f00;
+				color: #fff;
+				font-weight: bolder;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <div id="cEvent" onclick="console.log('click!')">click event</div> -->
+		<div id="cEvent">click event</div>
+	
+	</body>
+	
+</html>

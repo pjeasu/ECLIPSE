@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		
+		<script>
+		$(document).ready(function(){
+			
+			var wrapObj = $("#wrap");
+			
+			/*
+				객체 생성
+			*/
+			var divObj = $("<div> Hello jQuery! </div>");
+			
+			/*
+				객체 삽입
+			*/
+			
+			//존재하는 div 코드 (객체) 안에 삽입! 
+			//divObj.appendTo(wrapObj);		//.appendTo() : 마지막에 추가
+			//wrapObj.append(divObj);		//.append() 
+			//divObj.prependTo(wrapObj);	//.prependTo() : 위쪽에 추가 
+			//wrapObj.prepend(divObj);		//.prepend()
+			
+			//div 코드(객체)를 생성해서 추가
+			//divObj.insertAfter(wrapObj);	//.insertAfter() : 마지막에 추가 
+			//wrapObj.after(divObj);		//.after()
+			//divObj.insertBefore(wrapObj);	//.insertBefore() : 위쪽에 추가 
+			//wrapObj.before(divObj);		//.before()
+			
+		});
+		</script>
+	</head>
+	
+	<body>
+		<div id="wrap">
+			<div>contents</div>
+		</div>
+	</body>
+</html>
+

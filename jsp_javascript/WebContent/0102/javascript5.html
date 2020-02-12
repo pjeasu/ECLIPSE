@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+					
+		 		//'.'을 이용한 추가, 'delete'를 이용한 삭제
+		 	
+		 		var objName = {
+		 				name : "Lee sun sin",
+		 				nation : "Korea",
+		 				gender : "men",
+		 				character : "good"
+		 		};
+		 	
+		 		var print = "";
+		 		for ( var key in objName) {
+					print += key + " : " + objName[key] + "\n"
+				}
+		 		console.log(print);
+		 		
+		 		//속성 추가
+		 		objName.talent = "fencing";
+		 		print = "";
+		 		for ( var key in objName) {
+					print += key + " : " + objName[key] + "\n"
+				}
+		 		console.log(print);
+		 		
+		 		//속성 삭제
+		 		delete objName.talent;
+		 		print = "";
+		 		for ( var key in objName) {
+					print += key + " : " + objName[key] + "\n"
+				}
+		 		console.log(print);
+		 		
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

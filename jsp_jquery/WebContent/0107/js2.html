@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>javascript</title>
+		
+		<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script>
+			//이벤트 문법
+			
+			$(document).ready(function(){
+				
+				//방법 1
+				/* $(".logo").click(function(){
+					console.log("logo image click!");
+				}); */
+			
+				
+				
+				//방법2
+				$(".logo").click(imgClickEventListener);
+				
+				function imgClickEventListener(){
+					console.log("loge image click!");
+					console.log("called imgClickEventListener");
+				}
+				
+				
+				$(".logo").css("width", "200px").css("height", "300px");
+				
+			});
+			
+			
+		
+		
+			
+		</script>
+	</head>
+	
+	<body>
+		
+		<div>
+			<img class="logo" src="image.jpg">
+		</div>
+		
+	</body>
+</html>
+

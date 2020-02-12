@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+							
+				//함수반환
+				
+				function funName(){
+					
+					return function(x){
+						for(var i = 1; i<10; i++){
+							console.log(x + " * " + i + " = " + (x*i));				
+						}
+					};
+				}
+				
+				var returnFun = funName();
+				returnFun(4);
+					
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

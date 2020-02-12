@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<!-- 자주 사용하는 선택자 -1 -->
+		
+		<script>
+			$(document).ready(function(){
+				$("*").css("fontSize", "1.1em"); //전체 선택자
+				$("li").css("color", "#5652E2"); //태그 선택자
+				$("#item").css("background", "#EBF4FF").css("width", "300px"); //아이디 선택자
+				$(".seoul").css("background", "#A5CFFF"); //클래스 선택자
+				$("#wrap p").css("border", "2px solid #cccccc"); //후손 선택자
+				$("#wrap > p").css("border", "5px solid #cccccc"); //자손 선택자
+			});
+			
+		</script>
+	</head>
+	
+	<body>
+		<div id = "wrap">
+			<p>jQuery selector</p>
+			
+			<div id = "centent">
+				<h1>centent</h1>
+				<p>ㄱㄴㄷㄹㅁㅂㅅㅇㅈㅊㅌ</p>
+				<p>ABCDEFGHIJKLMN</p>
+			</div>
+			
+			<div id = "item">
+				<ul>
+					<!-- <li class = "seoul">서울</li> -->
+					<li style = "color:gray" class = "seoul">서울</li>
+					<li class = "gyeonggi_do">경기도</li>	
+					<li>충청도</li>
+					<li>전라도</li>
+					<li>경상도</li>
+					<li>강원도</li>
+					<li>제주도</li>
+				</ul>
+			</div>
+		
+		</div>
+		
+	</body>
+</html>
+

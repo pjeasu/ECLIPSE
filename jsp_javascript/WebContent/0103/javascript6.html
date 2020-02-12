@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+
+		 <script type = "text/javascript">
+		 
+		 	
+		 	window.onload = function() {
+			
+		 	//텍스트 노드 외 노드 이용하기 (1)
+		 	/*
+				var imgNode = document.createElement("img");
+				imgNode.src = "./image.jpg";
+				imgNode.width = "170";
+				imgNode.height = "67";
+				
+				document.body.appendChild(imgNode);
+			*/
+			
+			//텍스트 노드 외 노드 이용하기 (2)
+				var imgNode = document.createElement("img");
+				imgNode.setAttribute("src", "./image.jpg");
+				imgNode.setAttribute("width", 170);
+				imgNode.setAttribute("height", 67);
+				imgNode.setAttribute("tempData", "logoImg");
+				
+				document.body.appendChild(imgNode);
+			
+			};
+		 	
+		 	
+		 	
+		</script> 
+	</head>
+	<body>
+		
+	</body>
+	
+</html>

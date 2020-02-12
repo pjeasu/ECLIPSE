@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+					
+		 		//함수를 이용한 객체 생성
+		 		function createCar (name, color, speed){
+		 			var carObj = {
+		 					name : name,
+		 					color : color,
+		 					speed : speed,
+		 					run : function(){
+		 						return this.speed + "km/h";
+		 					}
+		 			};
+		 			return carObj;
+		 		};
+		 		
+		 		var sorento = createCar("SORENTO", "GREY", 220);
+		 		console.log("sorenteo.name : " + sorento.name);
+		 		console.log("sorenteo.run : " + sorento.run());
+		 		
+		 		var soul = createCar("SOUL", "WHITE", 180);
+		 		console.log("soul.name : " + soul.name);
+		 		console.log("soul.run : " + soul.run());
+		 		
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

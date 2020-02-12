@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+							
+				//콜백
+				
+				function funName(funCBF, funCBP, num){
+					for (var i = 0; i <= 10; i++) {
+						console.log(num + " * " + i + " = " + (num*i));
+						if(i<10) funCBP(i);
+					}
+					funCBF();
+				}
+				
+				function funCallBackProgress(n){
+					console.log((n*10) + " % 진행 완료");
+				}
+				
+				function funCallBackFinish(){
+					console.log("서버 작업 종료 !!!");
+				}
+					
+				funName(funCallBackFinish, funCallBackProgress, 7);
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

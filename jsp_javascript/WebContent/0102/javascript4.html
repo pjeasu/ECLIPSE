@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		
+		 <script type = "text/javascript">
+					
+		 		// in, with 키워드
+		 	
+		 		var objName = {
+		 				name : "Lee sun sin",
+		 				nation : "Korea",
+		 				gender : "men",
+		 				character : "good"
+		 		};
+		 	
+		 		//in 키워드
+		 		console.log("nation" in objName);
+		 		console.log("age" in objName);
+		 		
+		 		
+		 		//with 키워드
+		 		with(objName){
+		 			console.log("name : " + name);
+		 			console.log("nation : " + nation);
+		 			console.log("gender : " + gender);
+		 			console.log("character : " + character);
+		 		}
+		 		
+		</script> 
+	</head>
+	
+	<body>
+		
+	</body>
+	
+</html>

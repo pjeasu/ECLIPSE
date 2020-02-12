@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="EUC-KR">
+		<title>Insert title here</title>
+		<script src = "http://code.jquery.com/jquery-latest.min.js"></script>
+		
+		<script>
+			$(document).ready(function(){ 
+				$("#btn").click(function(){
+					
+					var result = document.getElementById('ajaxValue');
+					$.ajax({
+						url: "./json.jsp",		//요청할 url
+						type: "post",			//데이터 전송 방식, get 또는 post
+						cache: false,			//요청 페이지의 캐시 여부, false / true
+						dataType: "json",		//서버에서 받아올 데이터를 어떤 형태로 해석할 것인지! (xml, json, html, script)
+						/* data: "",				//서버로 데이터를 전송할 때 사용 (key = value) */
+						
+						success: function(data){
+							//Ajax 통신에 성공했을 때 실행되는 이벤트
+							console.log(result.innerHTML = data.study.ajax);
+							/* var htmlCode = '';
+								htmlCode += '<tr>' */
+						},
+						error: function(request, status, error){
+							//Ajax 통신에 실패했을 때 실행되는 이벤트, request, status, error로 에러 정보를 확인할 수 있음
+							console.log(request.responseText);
+							console.log(error);
+							/* alert("code : " + request.status + "\n" + "message : " + request.responseText); */
+							
+						}
+					});
+					
+				});
+				
+			});	
+		
+		</script>
+	</head>
+	
+	<body>
+		<input type = "button" id = "btn" value = "click">
+		<div id = "ajaxValue"></div>
+	</body>
+</html>
